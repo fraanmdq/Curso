@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDP PROGRAMA</title>
+</head>
+<body>
+    <h1 align="center"> INSCRIPCION</h1>
+    <h3 align="center">Mar Del Plata Programa</h3>
+        <form> <!-- Todos los campos del form van con value por DEFECTO, para que el backend sepa que responde el visitante-->
+            <label for="nombre"> Nombre :</label> <!--Los Label se usan para dar pistas al visitante, con for se intercepta con el input elegido-->
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required maxlength="15" required><br> <!--Name es para el backend, para que sepa que dato le esta llegando-->
+            <label for="apellido"> Apellido :</label>    
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required maxlength="15" required><br>
+            <label for="date"> Fecha de Nacimiento :</label>
+                <input type="date" id="date" name="date"><br>
+            <label for="numero">Número de contacto : </label>
+                <input type="number" id="numero" name="numero" placeholder="Teléfono de contacto" required maxlength="20"><br>
+            <label for="email"> Email :</label>    
+                <input type="email" id ="email" name="email" placeholder="Email"><br>
+            <label for="info"> ¿ Tienes conocimientos previos en Programación ? </label> <br>
+                    <input type="radio" id="info" value="1" name="multiple" value="1"> Si   <!--Los name tienen que ser iguales para poder seleccionar 1 sola opcion, y el value, es lo que le llega al backend-->
+                    <input type="radio" id="info" value="2" name="multiple" value="2"> No <br>
+            <label for="textarea"> ¿ Donde has estudiado ?</label><br>
+                    <textarea id="textarea" required maxlength="100"></textarea><br>
+            <label>Horarios de los cursos :</label> <br>
+                    <select>
+                        <option value="horarios">Mañana</option>
+                        <option value="horarios">Tarde</option>
+                        <option value="horarios">Noche</option>
+                    </select>    <br>
+                    <button type="submit">Enviar Inscripcion</button><br>
+                <button type="Reset">Resetear Formulario</button>
+
+        </form>
+    
+</body>
+</html>

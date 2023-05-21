@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02 Enlaces</title>
+</head>
+<body> 
+    <!-- Div isiones de colores-->
+    <div id="celeste" style="background-color: aqua; height: 70vh; width: 100;"></div>
+    <div id="rojo" style="background-color: red; height: 70vh; width: 100"></div>
+    <div id="amarillo" style="background-color: yellow; height: 70vh; width: 100"></div>
+    
+    <!-- ENLACES -->
+        <a title="Ejemplo" href="./Curso/clase02-Enlaces/Steam"> Enlaces - Ejemplos Atributos</a> <!-- Enlace a archivo interno del sistema-->
+        <a href="http://youtube.com" target="_blank"> Ir A Youtube</a> <!-- Enlace a Pagina interna , target _blank para que se abra en una pestañea nueva-->
+    
+    <!--Enlaces Email-->
+        <a href="mailto:ejemplo@gmail.com">Correo</a>
+   
+    <!--Enlaces Telefonos Con codigo de area-->
+        <a href="tel:"> Telefono</a>
+    
+    <!-- Enlaces en seccion , anclas, para mover la vista a la seccion que desee-->
+    
+        <a href="#rojo"> Seccion Roja </a>
+        <a href="#amarillo"> Seccion Amarillo </a>
+        <a href="#celeste"> Seccion Celeste </a>
+    
+    <!-- Enlaces Imagenes alt es para colocar un texto cuando una imagen este rota-->   
+        <img src="./Curso/clase02-Enlaces/nombre imagen con su extension" title="Imagen" alt="texto alternativo">  
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/47SKPVFJW5BLNNNTE7E4IXJTTQ.jpg" title="Foto google" alt="Foto de gugel">
+    <!-- Si es una imagen local, osea de la pc, colocar carpetas contenedoras y nombre de la imagen con su extension, por ejemplo .jpg
+    Y si es una imagen externa, osea de google o algun sitio, colocar el link
+           Ejemplo :-->
+        <a href="http://google.com.ar">
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/47SKPVFJW5BLNNNTE7E4IXJTTQ.jpg" width="100">
+        </a>
+    <!-- En este emplo, al cliquear en la imagen, te enviara a google, width le da el tamaño-->
+
+    <!-- Etiquetas de Lista-->
+        <ol>
+            <li>Lista 1</li>
+            <li>Lista 2</li>
+            <li>Lista 3</li>
+        </ol> 
+    <!-- La etiqueta ol va a mostrar una lista ordenada, y la etiqueta li coloca elementos dentro de ambas-->
+    
+        <ul>
+            <li> No hay orden</li>
+            <li> No hay orden</li>
+        </ul>
+    <!-- La etiqueta ul , crea una lista sin orden-->
+
+    <!-- TABLAS No se usan atributos, se usa css, pero aca estan para el ejemplo-->
+        <table border="1">
+            <thead> <!-- Etiqueta de Cabecera-->
+                <tr>
+                    <td>Columna 1</td>
+                    <td>Columna 2</td>
+                    <td>Columna 3</td>
+                    <td>Columna 4</td>
+                </tr>
+            </thead>
+            <tfoot> <!--Pie de lista-->
+                <tr>
+                    <td>Columna 1</td>
+                    <td>Columna 2</td>
+                    <td>Columna 3</td>
+                    <td>Columna 4</td>
+                </tr>
+            </tfoot>
+                <tr> <!--Filas -->
+                    <td>1</td> <!--Columnas-->
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+        </table>
+        <table border="1" width="100%">
+                <tr>
+                    <td colspan="3">1</td> <!-- Combinar Columnas coldspan y el numero de columnas a combinar-->
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+        </table>
+        <table border="1" width="100%">
+                <tr>
+                    <td rowspan="3">1</td> <!-- Combinar FILAS con rowspan y la cantidad de filas a combinar-->
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+        </table>
+
+        <!--Etiquetas de formulario-->
+            <form> <!-- Inputs o cajas de texto ------- atributo action="#" Es la ruta donde se enviaran los datos
+            method="post o Get" indica por donde se envian los archivos
+            enctype Es para subir archivos-->
+               <!-- CAJA DE TEXTO ( INPUTS )-->
+               <input type=""><br>  <!--Depende el type, es la caja que se crea :
+                text ( viene por default)
+                password -> Contraseña
+                number -> Numerico
+                date -> fecha
+                radio -> seleccion simple
+                checkbox -> seleccionar multiples
+                hidden -> Oculto
+                file -> Abre para subir archivos
+                -->
+                <input type="" name="" placeholder="Hola" required maxlength="10"><br>
+                <!--Name es para interceptarlo desde otro lenguaje, ejemplo php
+                placeholder es el texto que aparece por default en la caja de texto
+                required maxlenght es la cantidad maxima que quieras poner en la caja de texto
+                en este caso, 10 caracteres
+                    Ejemplos -->
+                <input type="text"><br>
+                <input type="password" disabled><br>
+                <input type="number" value="10" readonly><br>
+                <input type="file"><br>
+                <input type="date" value="Indicar Fecha" min="2022-01-01" max="2023-12-25"><br> <!--Agregar atributo min o max para colocar una fecha minima y max para una fecha maxima-->
+                    <!--
+                    Disabled es para que este desactivada la caja de texto
+                    readonly es para que la caja de texto sea solo lectura
+                    Value coloca un texto dentro de la caja de texto -->
+
+                <input id="mujer" type="radio" value="M" name="genero">
+                <!-- con el name te da a elegir solo 1 opcion-->
+                <label id="mujer">Mujer</label>
+                <input id="hombre" type="radio" value="H" name="genero">
+                <label id="hombre">Hombre</label>
+                <!--Los label con el mismo id, sirve para que cuando clickee en el texto, se autoclickea-->
+                <!-- los tipo radio, son para una caja de texto de forma circular, para elegir solo una opcion
+                     Los tipo checkbox, son para una caja de texto de forma cuadrada, para seleccionar multiples opciones-->  
+                <input type="checkbox" value="1" name="multiple" checked> 1 
+                <input type="checkbox" value="2" name="multiple"> 2
+                <input type="checkbox" value="3" name="multiple"> 3
+                <!--Checked es para que la opcion ya este preseleccionada-->
+                
+                <!-- BOTONES -->
+                <button type="submit">Enviar</button><br> <!--Submit es para enviar los datos-->
+                <button type="Reset">Resetear todas las cajas de texto</button><br> <!--Reset es para resetear las cajas de texto
+                y Type="button" es para interceptarlo con Javascript-->
+               
+                <!--Cajas de texto en Area-->
+                <textarea name="textoarea" placeholder="titulo" rows="6" cols="15"></textarea>
+                <!--Rows para darle la cantidad de filas (renglones) y cols la cantidad de caracteres por renglon-->
+
+                <!--Select O Listas desplegables-->
+                <!--Select te abre una lista desplegable con opciones-->
+                <select name="" required> <!--Required para que si o si se elija una opcion, y value es lo que le llega al backend,
+                    en este casi, value 1, le llegaria la opcion Uno, value 2 la opcion Dos y asi sucesivamente, required multiple para varias opciones-->
+                    <option value="1">Uno</option>
+                    <option value="2" selected>Dos</option> <!--Selected sirve para preseleccionar una opcion-->
+                    <option value="3">Tres</option>
+                        <optgroup label="Automoviles"> <!--optgroup Agrupa opciones-->
+                            <option value="vw">Vw</option>
+                            <option value="chevrolet">Chevrolet</option>
+                        </optgroup> 
+                        <optgroup label="Marcas">
+                            <option value="nike">Nike</option>
+                            <option value="adidas">Adidas</option>
+                        </optgroup>   
+                    </select>
+            </form>
+</body>
+</html>

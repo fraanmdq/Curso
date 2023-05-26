@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Estilos - Cascading Style Sheet ( CSS )</title>
+   <!-- <style>
+        code{
+            font-size: 3em;
+            color: #000;
+            background-color: white;
+        }
+        .codeUno{
+            color: red;
+        }
+        #codeUno{
+            color: blue;
+        }
+        p > b{
+            color: aqua;
+            font-size: 4em;
+        }
+        [title=click] { /*Comentarios*/
+            color: red;
+            font-size: 2em;
+        }
+        [title=click2] {
+            color: black;
+            font-size: 3em;
+        }
+        [title=click3] {
+            color: blue;
+            font-size: 4em;
+        }
+
+    </style> -->
+    <link rel="stylesheet" href="./css/main.css"> <!-- Conectando la hoja de estilos, desde la carpeta css, archivo css-->
+</head>
+<body>
+    <!-- Hoja de estilo en cascada ( css )
+      3 Formas de como insertar estilos a nuestro html
+    1.- Forma En linea ( que se usa css dentro de la etiqueta de HTMl)
+    2.- Forma Dentro del documento dentro del <head> con etiqueta Style
+    3.- Forma es un documento aparte, que se enlaza con HTML ( Nombredearchivo.css )-->
+    
+    <!--Forma de enlazar css 
+        1.-, con la class-->
+   <code class="codeUno segundaClase tercera Clase">
+        .nombreClass{
+            atributo:valor;
+            atributo:valor;
+        }
+    </code>
+     <!--Con el ID-->
+     <code>
+        #NombreClass{
+            atributo:valor;
+            atributo:valor;
+        }
+    </code>
+    <!-- Selector de elemento HTML -->
+    <code>
+        etiquetaHtml{
+            atributo:valor;
+            atributo:valor;
+        }
+    </code> 
+    <p style="color: aqua;"> HOLAA</p>
+    <!--COLORES EN CSS 
+    Colores en ingles ;
+    Colores en formato RGB( Rojo, Verde Y Azul ) , de 0 al 255-->
+    <p style="color:rgb(red, green, blue)"> Colores RGB</p>
+    <!--RGBA, Red Green Blue, y Alpha, este ultimo es la opacidad-->
+    <p style="color:rgba(red, green, blue, alpha)">Colores RGBA</p>
+    <!--Colores Hexadecimales, del 0 a la F #F05C por ejem-->
+    <p style="color: #F5C;">Colores Hexadecimales</p>
+    <!--LONGITUDES en HOJA DE ESTILOS-->
+    <!--2 TIPOS DE LONGITUDES-->
+    <!-- Longitud Absoluta ( Que se va a ver tal cual lo expresemos en cualquier display)
+        CM - MM - IN ( Pulgadas) - PX ( Pixeles) - pt ( POINTS ) - pc ( Picas )-->
+    <!--Longitudes Relativas
+        EM (Mayormente se utiliza cuando se trabaja con Font-size)
+        REM -> Mayormente con Font Size
+        ex -> Hace referencia al tamaño Height ( Altura )
+        vw -> Hace referencia al width viewport
+        vh -> Hace referencia al height viewport
+        % -->
+
+        <!-- SEGUNDA FORMA DE APLICAR CSS - Etiqueta Style dentro del HEAD-->
+
+      <b>NEGRITA</b>
+      <p> Hola como estas buenas <b>tardes</b></p> <!-- En el header, seleccion que en la etiqueta P, busque todas las b y le aplique el css indicado-->
+
+        <a href="www.youtube.com" title="click"> Enlace Uno</a> <!-- Selector de atributo [title]{ css }-->
+        <a href="www.youtube.com" title="click2"> Enlace Dos</a>
+        <a href="www.youtube.com" title="click3"> Enlace Tres</a>
+
+
+</body>
+</html>

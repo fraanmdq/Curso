@@ -1,0 +1,62 @@
+/* Como es un archivo .css no hace falta la etiqueta STyle*/
+
+code{
+    font-size: 3em;
+    color: #000;
+    background-color: white;
+}
+.codeUno{
+    color: red;
+}
+#codeUno{
+    color: blue;
+}
+p > b{
+    color: aqua;
+    font-size: 4em;
+}
+[title=click] { /*Comentarios*/
+    color: red;
+    font-size: 2em;
+}
+[title=click2] {
+    color: black;
+    font-size: 3em;
+}
+[title=click3] {
+    color: blue;
+    font-size: 4em;
+}
+
+/* PSEUDO CLASS- llevan : o dobles :: - Por ejemplo*/
+p:first-child{ /* :first-child hace referencia al primer elemento*/
+    background-color: blueviolet;
+    font-size: 18px;
+}
+p:hover, a:hover{ /* Hover Hace referencia cuando te paras SOBRE el elemento, este se agrande, en este caso, busca en un p, busca un a*/
+    font-size: 30px;
+}
+/*:nth-child(2){  nth child es un selector de listas 
+    background-color: red;
+} */
+
+p::after{
+    content: "Ejemplo :";
+}
+p::before{
+    content: "prueba:";
+    text-decoration: underline;
+}
+p::first-letter /* Primera letra de la etiqueta seleccionada osea, p*/
+{
+    color: red;
+    background: white;
+    padding: 5px;
+}
+input:focus{
+    padding: 5px;
+    border: 2px solid red;
+    background-color: black;
+    color: white;
+    
+}

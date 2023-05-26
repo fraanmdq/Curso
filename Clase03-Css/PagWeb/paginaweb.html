@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina Web</title>
+</head>
+<body>
+    <h1>¡ Hace tu pedido Online !</h1>
+    <img src="https://content-management-files.canva.com/cdn-cgi/image/f=auto,q=70/77fadcd3-00a6-4a0d-8437-e2d0cd9e9a3e/header_product-name2.jpg" height="400cm" width="400cm">
+    <br>
+    <form>
+        <label for="nombre"> <b> Nombre </b> :</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+        <br>
+        <label for="calle"> <b> Dirección de entrega : </b></label>
+        <input type="text" id="calle" name="calle" placeholder="Ingrese su dirección">
+        <br>
+        <label for="contacto"><b>Número de contacto : </b></label>
+        <input type="number" id="contacto" name="contacto" placeholder="Ingrese su número">
+        <br>
+        <label for="menu"><b> Menú </b></label>
+        <select name="menu" id="menu">
+            <optgroup label="Minutas">
+                <option disabled selected><b> Selecciona tu Menú </b></option>
+                <option>Sanguches de Milanesa</option>
+                <option>Sanguches de Bondiola</option>
+                <option>Hamburguesa Completa</option>
+                <option>Papas Fritas</option>
+            </optgroup>
+            <optgroup label="Pizzas">
+                <option>Muzzarella</option>
+                <option>Especial</option>
+                <option>Fugazzeta</option>
+                <option>Rellenas</option>
+            </optgroup>
+            <optgroup label="Bebidas">
+                <option>Linea Coca-Cola</option>
+                <option>Linea Pepsi</option>
+                <option>Linea Manaos</option>
+                <option>Aguas Saborizadas</option>
+            </optgroup>
+        </select>
+        <br>
+            <textarea name="textarea" id="textarea" placeholder="Comentarios" maxlength="100"></textarea>
+            <br>
+            <button type="submit" id="submit"> <b> Enviar Pedido </b></button>
+            <br>
+            <button type="Reset" id="reset"><b> Vaciar Campos </b></button>
+            <br>
+    </form>
+
+
+    <footer> <b> Footer </b></footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.container{
+    background-color: rgb(167, 194, 185);
+    width: 100%;
+    float: left;
+    clear: both;
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    color: rgb(83, 123, 233);
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+img{
+    position: relative;
+    top: -10cm;
+    float: right;
+    max-width: 15%;
+    margin: 10cm;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+} 
+
+h3{
+    font-size: 1.3em;
+    text-decoration: underline;
+    text-align: left;
+    color: rgb(83, 123, 233);
+}
+
+hr{ 
+    border-top: 15px #000;
+}
+
+nav ul li{
+    position: relative;
+    left: -0.7cm;
+    top: -0.5cm;
+    margin: 10px;
+    font-size: 15px;
+
+}

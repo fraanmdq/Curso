@@ -1,0 +1,137 @@
+@font-face{ /* Font face es para incluir fuentes*/
+    font-family: 'mifuente'; /* Indicar el nombre que quiero darle a la Fuente a incluir */
+    src:url(font/mido_igual.ttf) /*src:url es para agregar la fuente con el nombre del archivo*/
+}
+
+body{
+    font-family: 'mifuente';
+}
+.card-profile{
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.6); /* Resaltar el contenedor*/
+}
+
+.title{
+    color: grey;
+
+}
+button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer; /* pointer es la manito, la mas usada para acciones, ejemp, botones*/
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+button:hover,a:hover{
+    opacity: 0.7; /* PseudoClases, al boton y a etiqueta A, */
+}
+
+.card-profile img{
+    width: 100%;
+}
+.alert{
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+}
+.alert.warning{
+    background-color: rgb(255, 123, 0);
+    color: white;
+}
+.alert.error{
+    background-color: red;
+    color: white;
+}
+.alert.succes{
+    background-color: rgb(0, 255, 13);
+    color: rgb(255, 255, 255);
+}
+.alert.btn{
+    float: right;
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.alert.btn:hover{
+    color: black;
+}
+
+.scroll{
+    overflow: auto; /* Indicando que cree un Scroll, auto es automatico,
+    hidden es para que vea el tamaño indicado, visible muestra el scroll,
+    normalmente se utiliza Auto, o se le indica el height y el weidth
+     si o si tiene que tener un height*/
+    /* overflow-y: hidden;  Y es de abajo hacia arriba y X para el costado hidden oculta
+    overflow-x: auto; */
+    /* height: 300px;  Cuando sea 300px, crea el scroll de arriba hacia abajo*/
+    /* width: 300px;  Para que se visualice el scroll para el costado*/
+}
+.scroll::-webkit-scrollbar{ /* Dar el tamaño a la scroll bar*/
+    width: 12px;
+}
+.scroll::-webkit-scrollbar-track{ /* Darle color al scrollbar de abajo*/
+    background-color: aquamarine;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 20px;
+    border: 3px solid orange;
+}
+/* Tipos de lineas a los BORDES*/
+p{
+    outline: red; /* con este atributo le doy color a TODAS las etiquetas p*/
+    border: 2px; /* Ancho de la linea*/
+}
+p.dotted{
+    outline-style: dotted;
+}
+p.dashed{
+    outline-style: dashed;
+}
+p.solid{
+    outline-style: solid;
+}
+p.double{
+    outline-style: double;
+}
+p.groove{
+    outline-style: groove;
+}
+p.ridge{
+    outline-style: ridge;
+}
+p.inset{
+    outline-style: inset;
+}
+p.outset{
+    outline-style: outset;
+    outline-width: medium; /* Para darle el Tamaño a la linea*/
+}
+
+/* Degradado de colores*/
+body{                 /*radial-gradient ... conic-gradient*/
+    background-image: linear-gradient(red, yellow); /*Para dar direccion
+    al degradado, ( to right, "color", "color" , (to bottom right, "color", "color"
+    (180deg, "color", "color")*/
+    background-repeat: no-repeat; /* Que no repita, repeat-x , repeat-y*/
+}
+.fondoimg{ /* Usar imagen de fondo*/
+    background-image: url(../img/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 45vh;
+    width: 40%;
+}

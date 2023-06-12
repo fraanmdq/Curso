@@ -1,0 +1,179 @@
+/*
+font-family: 'Abel', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* Para que agarre todo el tamaño completo*/
+}
+
+body{
+    font-family: 'Oswald';
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-color: #f2f2f2;
+    margin: 0px;
+}
+
+header img{
+    max-width: 200px;
+    float: left;
+}
+
+header nav{
+    font-family: 'Montserrat';
+    float: left;
+}
+
+.menuHeader ul{
+    list-style: none;
+}
+.menuHeader li{
+    float: left;
+}
+.menuHeader li a{
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+    font-size: 20px;
+}
+.menuHeader li a:hover{
+    color: red;
+}
+
+.main{
+    clear: both;
+    width: 70%;
+    background-color: #03114569;
+    float: left;
+}
+section{
+    padding: 20px;
+}
+section .card-product{
+    max-width: 13%;
+    border: 2px solid #494141;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+}
+section .card-product img{
+    max-width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 2px solid #03114569;
+}
+section .card-product .description{
+    text-align: center;
+    line-height: 200%;
+    letter-spacing: 2px; /* Espacio entre letras*/
+    font-family: 'Oswald';
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+section .card-product .precio{
+    text-align: left;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+section .card-product-footer{
+    width: 100%;
+    background-color: #494141;
+    height: 40px;
+    border-radius: 0px 0px 20px 20px;
+
+}
+section .card-product-footer button{
+    width: 50%;
+    float: left;
+    height: 40px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+aside{
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    float: left;
+}
+aside section nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+aside section nav li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid red;
+}
+
+aside section nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+aside section nav li:hover{
+    border-bottom: 1px solid #021651;
+    color: red;
+}
+aside .form{
+    width: 100%;
+    border: 3px solid #494141;
+    border-radius: 10px;
+    padding: 5px;
+}
+aside .form h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+aside .form input, aside .form textarea{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+aside .form textarea{
+    height: 100px!important;
+    resize: none; /* resize sirve para que el visitante no pueda modificar el textarea*/
+}
+aside .form button{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+footer{
+    clear: both;
+    padding: 60px;
+    background-color: beige;
+    color: white;
+}
+footer div{
+    width: 100%;
+}
+footer .one{
+    float: left;
+    color: black;
+}
+footer .two{
+    float: right;
+    text-align: right;
+}
+footer .two a{
+    color: rgb(17, 16, 16);
+    text-decoration: none;
+}
